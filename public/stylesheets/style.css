@@ -48,3 +48,34 @@ footer {
 .mfp-zoom-in.mfp-removing.mfp-bg {
   opacity: 0;
 }
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+}
+
+
+
+.ct-1 {
+      background-color: #FFFCF3;
+}
+.ct-2 {
+      background-color: #504F66;
+}
+.ct-3 {
+      background-color: #fff9e6;
+}
+.ct-4 {
+      background-color: #262A2F;
+}
+
+ul > li > a {
+    line-height: 53px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Slabo 27px', serif;
+    color: #504F66;
+}
+
+ul > li > a.active  {
+    color: #829DD1;
+}
