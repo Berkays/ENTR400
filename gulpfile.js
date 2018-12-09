@@ -1,11 +1,11 @@
 'use strict';
 
 var gulp = require('gulp');
-var exec = require('child_process').exec;
+var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync');
 
 
-gulp.task('default', ['server','browser-sync'], function () {
+gulp.task('default', ['nodemon','browser-sync'], function () {
 });
 
 gulp.task('browser-sync', function () {
@@ -17,6 +17,11 @@ gulp.task('browser-sync', function () {
     });
 });
 
-gulp.task('server', function () {
-    exec('node ./bin/www');
-});
+gulp.task('nodemon', function (done) {
+  nodemon({
+    script: './bin/www'
+  , ext: 'js html'
+  , env: { 'NODE_ENV': 'development' }
+  , done: done
+  })
+})
