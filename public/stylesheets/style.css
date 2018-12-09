@@ -49,23 +49,18 @@ footer {
   opacity: 0;
 }
 
-h1 {
-    font-family: 'Fredoka One', cursive;
+.ct-dark {
+      background-color: #ebe9e0;
+}
+.ct-base {
+      background-color: #f7f7f7;
+}
+.ct-darkest {
+      background-color: #B7AE92;
 }
 
-
-
-.ct-1 {
-      background-color: #FFFCF3;
-}
-.ct-2 {
-      background-color: #504F66;
-}
-.ct-3 {
-      background-color: #fff9e6;
-}
-.ct-4 {
-      background-color: #262A2F;
+.ct-footer {
+    background-color: #404259;
 }
 
 ul > li > a {
@@ -78,4 +73,41 @@ ul > li > a {
 
 ul > li > a.active  {
     color: #829DD1;
+}
+
+.gradient-fade {
+background: -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.44) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0.43) 100%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.44) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,0.43) 100%,rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.44) 0%,rgba(0,0,0,0.4) 50%,rgba(255,255,255,0.43) 100%,rgba(255,255,255,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.font-raleway {
+    font-family: 'Raleway', sans-serif; font-size:16px;
+}
+
+.font-fredoka {
+    font-family: 'Fredoka One', cursive;
+}
+
+.font-unica {
+    font-family: 'Unica One', cursive;
+}
+
+.font-karla {
+    font-family: 'Karla', sans-serif;
+}
+
+.submit-btn {
+    background-color: #008575;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+}
+
+.submit-text {
+    color: #008575;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-weight: 600;
 }

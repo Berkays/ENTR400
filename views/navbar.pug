@@ -1,7 +1,7 @@
 div.container-fluid.p-0()
-    nav(class="navbar navbar-expand-lg ct-1 shadow-sm")
+    nav(class="navbar navbar-expand-lg ct-dark shadow")
         a(class="navbar-brand" href="#")
-            img(src="/images/navbarLogo.png" class="ml-4" width=160 height=64 alt="")
+            img(src="/images/navbarLogo.png" class="ml-4 hvr-pulse-shrink" width=160 height=64 alt="")
         ul(class="navbar-nav ml-auto flex-nowrap-1")
             li.nav-item
                 a(class="nav-link hvr-underline-reveal active" href="./") Home
@@ -12,9 +12,13 @@ div.container-fluid.p-0()
             li.nav-item
                 a(class="nav-link hvr-underline-reveal" href="#") Contact
             li.nav-item
-        form.form-inline.ml-4()
-        if(true)
-            button(id="navLoginBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#loginModal") Login
-            button(id="navRegisterBtn" class="btn btn-outline-success ml-2 my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#registerModal") Register
+        div.ml-2.mr-4.gradient-fade(style="height:100px;width:1px;")
+        div.d-flex.flex-column
+        if(!user)
+            a(href="/login" class="btn btn-lg btn-outline-dark")
+                span.fas.fa-user()
+                div(style="font-size:14px;") Account
         else
-            button(id="navLogoutBtn" class="btn btn-outline-danger ml-2 my-2 my-sm-0" type="submit") Sign Out
+            a(href="/account" class="btn btn-lg btn-outline-dark")
+                span.fas.fa-user()
+                div(style="font-size:14px;") Hello, #{user.username}

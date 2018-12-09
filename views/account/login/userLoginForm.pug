@@ -1,0 +1,8 @@
+form(action="/login" method="post")
+    .form-group
+        label(for='userLoginForm_name') Username
+        input#userLoginForm_name.form-control(type='username' placeholder='Enter your username')
+    .form-group
+        label(for='userLoginForm_password') Password
+        input#userLoginForm_password.form-control(type='password' placeholder='Password')
+        input(type="submit", value="Submit")

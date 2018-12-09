@@ -1,0 +1,22 @@
+extends layout
+
+block styles
+    link(href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet")
+block content
+    div.row.justify-content-center
+        div.col-6
+            form.bg-white.shadow-sm.p-5(role="form" action="/login",method="post")
+                h2.text-center.font-unica.text-uppercase.mb-4 Login
+                div.form-group
+                    input(type="text" class="form-control rounded-0 font-karla bg-light" name="username" aria-describedby="usernameHelp" placeholder="Username" required, autofocus)
+                div.form-group
+                    input(type="password" class="form-control rounded-0 font-karla bg-light" name="password" aria-describedby="passwordHelp" placeholder="Password")
+                button(type="submit" class="btn btn-primary submit-btn rounded-0 font-karla text-uppercase btn-block mt-4 p-2") Sign In
+                div.text-center.mt-4
+                    a.submit-text.font-karla(href="")
+                        p
+                            | Recover password
+                    a.submit-text.font-karla(href="/register")
+                        p
+                            | Create new account

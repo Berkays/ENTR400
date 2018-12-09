@@ -1,0 +1,18 @@
+#loginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='loginModal' aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    div.mb-2
+                    nav
+                        #nav-tab.nav.nav-tabs.justify-content-center(role='tablist')
+                            a#nav-home-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-user' role='tab' aria-controls='nav-user' aria-selected='true') User Login
+                            a#nav-profile-tab.nav-item.nav-link(data-toggle='tab' href='#nav-company' role='tab' aria-controls='nav-company' aria-selected='false') Company Login
+                        #nav-tabContent.tab-content
+                            #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-user-tab')
+                                .modal-body
+                                    include userLoginForm
+                            #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-company-tab')
+                                .modal-body
+                                    include companyLoginForm
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Login

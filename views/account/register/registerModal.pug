@@ -1,0 +1,18 @@
+#registerModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='registerModal' aria-hidden='true')
+            .modal-dialog.modal-dialog-centered(role='document')
+                .modal-content
+                    div.mb-2
+                    nav
+                        #nav-tab.nav.nav-tabs.justify-content-center(role='tablist')
+                            a#nav-home-tab.nav-item.nav-link.active(data-toggle='tab' href='#nav-home' role='tab' aria-controls='nav-home' aria-selected='true') User
+                            a#nav-profile-tab.nav-item.nav-link(data-toggle='tab' href='#nav-profile' role='tab' aria-controls='nav-profile' aria-selected='false') Company
+                        #nav-tabContent.tab-content
+                            #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-user-tab')
+                                .modal-body
+                                    include userRegisterForm
+                            #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-company-tab')
+                                .modal-body
+                                    include companyRegisterForm
+                    .modal-footer
+                        button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+                        button.btn.btn-primary(type='button') Submit
