@@ -4,10 +4,6 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 var browserSync = require('browser-sync');
 
-
-gulp.task('default', ['nodemon','browser-sync'], function () {
-});
-
 gulp.task('browser-sync', function () {
     browserSync.init(null, {
         proxy: "http://localhost:3000",
@@ -18,10 +14,13 @@ gulp.task('browser-sync', function () {
 });
 
 gulp.task('nodemon', function (done) {
-  nodemon({
-    script: './bin/www'
-  , ext: 'js html'
-  , env: { 'NODE_ENV': 'development' }
-  , done: done
-  })
+    nodemon({
+        script: './bin/www'
+        , ext: 'js html'
+        , env: { 'NODE_ENV': 'development' }
+        , done: done
+    });
 })
+
+gulp.task('default', gulp.parallel('nodemon', 'browser-sync'));
+
