@@ -3,6 +3,8 @@ extends layout
 block styles
     link(href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet")
+    link(href="/stylesheets/loginstyle.css" rel="stylesheet")
+
 block content
     div.row.justify-content-center.mt-5
         div.col-6
@@ -20,3 +22,19 @@ block content
                     a.submit-text.font-karla(href="/register")
                         p
                             | Create new account
+    .login-page
+        .form
+            form.register-form(method='post' action='/register')
+            input(type='text' placeholder='username' name='username')
+            input(type='password' placeholder='password' name='password')
+            button Create
+            p.message
+                | Already registered? 
+                a(href='#') Sign In
+            form.login-form(method='post' action='/login')
+            input(type='text' placeholder='username' name='username')
+            input(type='password' placeholder='password' name='password')
+            button Login
+            p.message
+                | Not registered? 
+                a(href='#') Create an account

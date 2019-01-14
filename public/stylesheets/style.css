@@ -1,14 +1,13 @@
 body {
   padding: 0 0 0 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
 }
 
 footer {
     min-height: 300px;
+}
+
+nav > a.active {
+    color: white;
 }
 
 .white-popup {
@@ -49,6 +48,10 @@ footer {
   opacity: 0;
 }
 
+.ct-navbar {
+    background-color: #605856;
+}
+
 .ct-dark {
       background-color: #ebe9e0;
 }
@@ -60,7 +63,7 @@ footer {
 }
 
 .ct-footer {
-    background-color: #404259;
+    background-color: #348AA7;
 }
 
 .ct-intro {
@@ -114,4 +117,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
     text-decoration: none;
     letter-spacing: 0.1em;
     font-weight: 600;
+}
+
+.footer-text {
+    color: #6DB5CD;
 }
