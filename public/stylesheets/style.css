@@ -10,6 +10,10 @@ nav > a.active {
     color: white;
 }
 
+a:hover {
+ color:#CCDDE2;
+}
+
 .white-popup {
   position: relative;
   background: #FFF;
@@ -43,10 +47,10 @@ nav > a.active {
   opacity: 0;
 }
 
+/* Colors  */
 .ct-navbar {
     background-color: #605856;
 }
-
 .ct-dark {
       background-color: #ebe9e0;
 }
@@ -56,25 +60,23 @@ nav > a.active {
 .ct-darkest {
       background-color: #B7AE92;
 }
-
 .ct-footer {
     background-color: #348AA7;
 }
-
 .ct-intro {
     background-color: #c8c8f7;
 }
 
-ul > li > a {
+nav > ul > li {
+    margin-right: 1em;
+}
+
+nav > ul > li > a {
     line-height: 53px;
     font-size: 18px;
     font-weight: 600;
     font-family: 'Slabo 27px', serif;
     color: #504F66;
-}
-
-ul {
-  list-style-type: none;
 }
 
 nav > ul > li > a  {
@@ -85,12 +87,8 @@ nav > ul > li > a.active  {
     color: #F7DAD9;
 }
 
-.gradient-fade {
-background: -moz-linear-gradient(top, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.44) 0%, rgba(0,0,0,1) 50%, rgba(255,255,255,0.43) 100%, rgba(255,255,255,0.2) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.44) 0%,rgba(0,0,0,1) 50%,rgba(255,255,255,0.43) 100%,rgba(255,255,255,0.2) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0.44) 0%,rgba(0,0,0,0.4) 50%,rgba(255,255,255,0.43) 100%,rgba(255,255,255,0.2) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', endColorstr='#33ffffff',GradientType=0 ); /* IE6-9 */
-}
+
+
 
 .font-raleway {
     font-family: 'Raleway', sans-serif; font-size:16px;
@@ -122,12 +120,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
     font-weight: 600;
 }
 
-.footer-text {
-    color: #6DB5CD;
+.footer-link {
+    color: #a0d0de;
+    line-height: 42px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Slabo 27px', serif;
 }
 
 /* Index */
 
-.carousel-inner > .item {
-    height: 800px;
+.carousel-inner > .carousel-item {
+    height: 930px; 
 }

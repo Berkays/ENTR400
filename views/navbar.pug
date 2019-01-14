@@ -1,24 +1,24 @@
-div.container-fluid.p-0()
+div.container-fluid.p-0.border-bottom.border-dark()
     nav(class="navbar navbar-expand-lg ct-navbar shadow-sm")
         a(class="navbar-brand" href="#")
             img(src="/images/navbarLogoBright.png" class="ml-4 hvr-pulse-shrink" width=160 height=64 alt="")
         ul(class="navbar-nav ml-auto flex-nowrap-1")
             li.nav-item
-                a(class="nav-link hvr-underline-reveal active" href="./") Home
+                a(class="nav-link hvr-underline-reveal active" href="./") Ana Sayfa
             li.nav-item
-                a(class="nav-link hvr-underline-reveal" href="./about") About Us
+                a(class="nav-link hvr-underline-reveal" href="./about") Hakkımızda
             li.nav-item
-                a(class="nav-link hvr-underline-reveal" href="#") References
+                a(class="nav-link hvr-underline-reveal" href="#") İş Ortakları
             li.nav-item
-                a(class="nav-link hvr-underline-reveal" href="#") Contact
+                a(class="nav-link hvr-underline-reveal" href="#") İletişim
             li.nav-item
-        div.ml-2.mr-4.gradient-fade(style="height:100px;width:1px;")
+        div.ml-2.mr-4.sexy_line(style="height:100px;width:1px;border:0.1px solid #B7AE92")
         div.d-flex.flex-column
         if(!user)
-            a(href="/login" class="btn btn-lg btn-outline-dark")
+            a(href="/login" class="btn btn-lg btn-outline-light")
                 span.fas.fa-user()
-                div(style="font-size:14px;") Account
+                div(style="font-size:14px;") Üye Girişi
         else
-            a(href="/account" class="btn btn-lg btn-outline-dark")
+            a(href="/account" class="btn btn-lg btn-outline-light")
                 span.fas.fa-user()
-                div(style="font-size:14px;") Hello, #{user.username}
+                div(style="font-size:14px;") Merhaba, #{user.username}

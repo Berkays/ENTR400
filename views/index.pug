@@ -5,11 +5,21 @@ block styles
     link(link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
 block content
     div.carousel.slide(id="carousel" data-ride="carousel")
+        ol.carousel-indicators()
+            li.active(data-target="#carousel" data-slide-to="0")
+            li(data-target="#carousel" data-slide-to="1")
         div.carousel-inner
             div.carousel-item.active
                 img.d-block.w-100(src="/images/car-1.jpg")
             div.carousel-item
                 img.d-block.w-100(src="/images/car-2.png")
+        a.carousel-control-prev(href="#carousel" role="button" data-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.sr-only Previous
+        a.carousel-control-next(href="#carousel" role="button" data-slide="prev")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.sr-only Next
+        
 
 block scripts
     script(src="/javascripts/index.js")
