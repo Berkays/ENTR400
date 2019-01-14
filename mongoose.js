@@ -3,8 +3,8 @@ mongoose.Promise = global.Promise;
 
 module.exports = {
     connect: function () {
-        mongoose.connect('mongodb://localhost/ENTR')
-            .then(() => console.log('connection succesful'))
-            .catch((err) => console.error(err));
+        mongoose.connect('mongodb://localhost/ENTR',{ useNewUrlParser:true })
+            .then(() => console.log('DB Connection Succesful.'))
+            .catch((err) => console.error("DB Connection Failed."));
     }
 };
