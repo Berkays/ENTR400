@@ -63,6 +63,10 @@ footer {
     background-color: #404259;
 }
 
+.ct-intro {
+    background-color: #c8c8f7;
+}
+
 ul > li > a {
     line-height: 53px;
     font-size: 18px;
