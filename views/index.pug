@@ -4,21 +4,12 @@ block styles
     link(href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet")
     link(link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet")
 block content
-    div.jumbotron    
-        h1.mt-4.shadow.p-3.mb-4.rounded.border.border-dark.ct-darkest.font-fredoka Welcome...
-        p.font-raleway
-            | &emsp; Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu feugiat pretium nibh ipsum consequat. Dictum varius duis at consectetur lorem donec. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Amet luctus venenatis lectus magna fringilla. Porttitor eget dolor morbi non arcu. Fames ac turpis egestas maecenas pharetra convallis. Ornare arcu odio ut sem nulla pharetra diam sit amet. Mattis vulputate enim nulla aliquet porttitor lacus. Mi quis hendrerit dolor magna eget est lorem ipsum. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Urna cursus eget nunc scelerisque. Sed felis eget velit aliquet sagittis id. Faucibus scelerisque eleifend donec pretium. Neque vitae tempus quam pellentesque. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Nisi porta lorem mollis aliquam ut porttitor leo.
-            br
-            br
-            | &emsp;Sit amet dictum sit amet justo donec enim diam vulputate. In est ante in nibh mauris cursus mattis molestie. Amet aliquam id diam maecenas. Enim eu turpis egestas pretium. Ut etiam sit amet nisl. Facilisis sed odio morbi quis commodo odio aenean sed. Id donec ultrices tincidunt arcu non sodales neque sodales ut. Netus et malesuada fames ac turpis egestas integer. Tempor nec feugiat nisl pretium fusce id velit. Turpis in eu mi bibendum neque egestas congue. Mauris commodo quis imperdiet massa. Facilisis mauris sit amet massa vitae tortor condimentum. Vitae elementum curabitur vitae nunc sed velit dignissim. In nulla posuere sollicitudin aliquam ultrices sagittis. Mauris sit amet massa vitae tortor condimentum lacinia quis. Aliquam malesuada bibendum arcu vitae elementum curabitur.
-            br
-            br
-            | &emsp;Sed risus pretium quam vulputate. Vitae et leo duis ut diam quam nulla. Cursus eget nunc scelerisque viverra mauris in aliquam. At tempor commodo ullamcorper a lacus vestibulum sed. Diam in arcu cursus euismod quis viverra nibh. Id cursus metus aliquam eleifend mi in nulla posuere. Neque gravida in fermentum et. Amet commodo nulla facilisi nullam vehicula. Turpis nunc eget lorem dolor sed viverra ipsum. Aliquam etiam erat velit scelerisque in dictum non. Convallis a cras semper auctor neque. Sollicitudin aliquam ultrices sagittis orci a scelerisque. Accumsan sit amet nulla facilisi morbi. Malesuada nunc vel risus commodo viverra. Nec ultrices dui sapien eget mi proin sed libero enim. Tincidunt eget nullam non nisi est.
-            br
-            br
-            | &emsp;Malesuada nunc vel risus commodo viverra maecenas accumsan. Bibendum neque egestas congue quisque. Ut tortor pretium viverra suspendisse potenti nullam ac. Dictum at tempor commodo ullamcorper a lacus vestibulum. Eu lobortis elementum nibh tellus molestie nunc non. A erat nam at lectus urna duis. Facilisi etiam dignissim diam quis enim. Quis blandit turpis cursus in. Magna ac placerat vestibulum lectus mauris ultrices eros. Fames ac turpis egestas maecenas pharetra convallis.
-            br
-            br
-            | &emsp;Elementum nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Viverra suspendisse potenti nullam ac tortor vitae. Diam quam nulla porttitor massa id neque aliquam vestibulum morbi. Aenean et tortor at risus viverra. Enim ut sem viverra aliquet eget. Consequat id porta nibh venenatis cras sed. Sed vulputate mi sit amet mauris. Arcu risus quis varius quam. In aliquam sem fringilla ut morbi tincidunt. Fringilla est ullamcorper eget nulla facilisi etiam dignissim. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Amet est placerat in egestas erat imperdiet. Maecenas sed enim ut sem viverra aliquet eget sit. Ante metus dictum at tempor commodo ullamcorper a. Viverra nam libero justo laoreet sit amet. Varius vel pharetra vel turpis. Bibendum at varius vel pharetra vel. Varius vel pharetra vel turpis nunc. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Vel facilisis volutpat est velit egestas dui id.
+    div.carousel.slide(id="carousel" data-ride="carousel")
+        div.carousel-inner
+            div.carousel-item.active
+                img.d-block.w-100(src="/images/car-1.jpg")
+            div.carousel-item
+                img.d-block.w-100(src="/images/car-2.png")
 
-
+block scripts
+    script(src="/javascripts/index.js")

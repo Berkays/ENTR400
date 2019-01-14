@@ -19,11 +19,6 @@ nav > a.active {
   margin: 20px auto;
 }
 
-.mfp-zoom-in {
-  /* start state */
-  /* animate in */
-  /* animate out */
-}
 .mfp-zoom-in .mfp-with-anim {
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -56,7 +51,7 @@ nav > a.active {
       background-color: #ebe9e0;
 }
 .ct-base {
-      background-color: #f7f7f7;
+      background-color: #CECFC7;
 }
 .ct-darkest {
       background-color: #B7AE92;
@@ -78,8 +73,16 @@ ul > li > a {
     color: #504F66;
 }
 
-ul > li > a.active  {
-    color: #829DD1;
+ul {
+  list-style-type: none;
+}
+
+nav > ul > li > a  {
+    color: #A5907E;
+}
+
+nav > ul > li > a.active  {
+    color: #F7DAD9;
 }
 
 .gradient-fade {
@@ -121,4 +124,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#33ffffff', e
 
 .footer-text {
     color: #6DB5CD;
+}
+
+/* Index */
+
+.carousel-inner > .item {
+    height: 800px;
 }

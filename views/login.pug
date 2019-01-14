@@ -22,19 +22,3 @@ block content
                     a.submit-text.font-karla(href="/register")
                         p
                             | Create new account
-    .login-page
-        .form
-            form.register-form(method='post' action='/register')
-            input(type='text' placeholder='username' name='username')
-            input(type='password' placeholder='password' name='password')
-            button Create
-            p.message
-                | Already registered? 
-                a(href='#') Sign In
-            form.login-form(method='post' action='/login')
-            input(type='text' placeholder='username' name='username')
-            input(type='password' placeholder='password' name='password')
-            button Login
-            p.message
-                | Not registered? 
-                a(href='#') Create an account
